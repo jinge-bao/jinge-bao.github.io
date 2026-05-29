@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{talks.html}, nofooter
+= Talks
+
+== On the Quantum Time Complexity of Divide and Conquer
+
+- SIAM Conference on Optimization, Edinburgh, UK --- June 2026.
+- ICALP 2025, Aarhus, Denmark --- July 2025.
+- QIP 2024, Taipei, Taiwan --- January 2024.
+- Q.Inc Seminar, IHPC, A*STAR, Singapore --- April 2024.
+- Math CS Seminar, IQC, Waterloo, Canada --- March 2024.
+- Algorithms and Complexity Seminar, IRIF, Paris, France --- November 2024.
+
+== Learning Junta Distributions, Quantum Junta States, and QAC0 Circuits
+
+- AQIS 2025, Hong Kong, China SAR --- August 2025.
+- Quantum Algorithms and Complexity Workshop, Edinburgh, UK --- June 2025.
+
+== Constant-Depth Circuits for Boolean Functions and Quantum Memory Devices
+
+- TQC 2024, Okinawa, Japan --- September 2024.
+- QTML 2023, CERN, Switzerland --- November 2023.
+
+== Quantum Algorithm for Stochastic Optimal Stopping Problems
+
+- TQC 2022, Urbana-Champaign, Illinois, USA --- July 2022.

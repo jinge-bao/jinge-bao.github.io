@@ -1,0 +1,54 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+= Publications
+
+See also my [https://scholar.google.com/ Google Scholar] and
+[https://arxiv.org/a/bao_j_1 arXiv] pages. Author names are listed alphabetically
+(theoretical computer science convention) unless noted.
+
+== Preprints
+
+. *On Estimating the Quantum Tsallis Relative Entropy* \n
+  *Jinge Bao*, Minbo Gao, Qisheng Wang \n
+  arXiv:2510.00752, 2025. \n
+  [https://arxiv.org/abs/2510.00752 arXiv]
+
+. *Fundamental Theorem for the Pricing of Quantum Assets* \n
+  *Jinge Bao*, Patrick Rebentrost \n
+  arXiv:2212.13815, 2022. \n
+  [https://arxiv.org/abs/2212.13815 arXiv]
+
+== 2026
+
+. *Learning Junta Distributions, Quantum Junta States, and $\mathrm{QAC}^0$ Circuits* \n
+  *Jinge Bao*, Francisco Escudero Gutiérrez \n
+  International Conference on Machine Learning (ICML), 2026.
+
+== 2025
+
+. *On the Quantum Time Complexity of Divide and Conquer* \n
+  Jonathan Allcock, *Jinge Bao*, Aleksandrs Belovs, Troy Lee, Miklos Santha \n
+  52nd International Colloquium on Automata, Languages, and Programming (ICALP),
+  No. 70, pp. 70:1--70:20, 2025.
+
+. *Quantum Algorithms and Lower Bounds for Eccentricity, Radius, and Diameter in Undirected Graphs* \n
+  Adam Wesołowski, *Jinge Bao* \n
+  arXiv:2502.20148, 2025. Poster at TQC 2025. \n
+  [https://arxiv.org/abs/2502.20148 arXiv]
+
+. *Language Model for Large-Text Transmission in Noisy Quantum Communications* \n
+  Yuqi Li, Zhuohang Shi, Haitao Ma, Li Shen, *Jinge Bao*, Yunlong Xiao \n
+  arXiv:2504.20842, 2025. Poster at QTML 2024. \n
+  [https://arxiv.org/abs/2504.20842 arXiv]
+
+== 2024
+
+. *Constant-Depth Circuits for Boolean Functions and Quantum Memory Devices Using Multi-Qubit Gates* \n
+  Jonathan Allcock, *Jinge Bao*, João F. Doriguello, Alessandro Luongo, Miklos Santha \n
+  Quantum, vol. 8, p. 1530, 2024.
+
+== 2022
+
+. *Quantum Algorithm for Stochastic Optimal Stopping Problems with Applications in Finance* \n
+  João F. Doriguello, Alessandro Luongo, *Jinge Bao*, Patrick Rebentrost, Miklos Santha \n
+  17th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC),
+  No. 2, pp. 2:1--2:24, 2022.

@@ -1,0 +1,40 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+= Jinge Bao
+
+~~~
+{}{img_left}{photo.jpg}{Jinge Bao}{160}{200}
+*Jinge Bao* \n
+Senior Researcher \n
+[https://www.ed.ac.uk/informatics School of Informatics] \n
+[https://www.ed.ac.uk/ University of Edinburgh] \n\n
+Office: Room 3.05, Informatics Forum \n
+10 Crichton Street, Edinburgh, EH8 9AB \n
+Email: francisbao1011 (at) gmail.com \n
+[cv.html CV] | [https://scholar.google.com/ Scholar] | [https://github.com/jinge-bao GitHub]
+~~~
+
+== About
+
+I am a Senior Researcher at the [https://www.ed.ac.uk/informatics School of Informatics],
+University of Edinburgh. I obtained my Ph.D. in Computer Science from the
+[https://www.nus.edu.sg/ National University of Singapore] (2020--2024), where I was
+affiliated with the [https://www.quantumlah.org/ Centre for Quantum Technologies (CQT)],
+with a thesis on circuit-based quantum algorithms.
+
+My research interests span *quantum property testing*, *quantum learning theory*,
+*quantum computational complexity*, *quantum computational cryptography*, and *AI for quantum*.
+
+== News
+
+- *2026-06*: Selected as a Gold Reviewer for ICML 2026.
+- *2026-05*: Lecturing at the Quantum Information CDT Spring School.
+- *2026-01*: Our paper on learning junta distributions and $\mathrm{QAC}^0$ circuits was accepted at ICML 2026.
+- *2025-08*: Invited talk at AQIS 2025 in Hong Kong.
+- *2025-07*: Presented our divide-and-conquer work at ICALP 2025 in Aarhus.
+
+== Contact
+
+School of Informatics, University of Edinburgh \n
+Room 3.05, Informatics Forum, 10 Crichton Street \n
+Edinburgh, EH8 9AB, United Kingdom \n
+Email: francisbao1011 (at) gmail.com
