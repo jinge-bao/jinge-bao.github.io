@@ -15,14 +15,15 @@ Email: francisbao1011 (at) gmail.com \n
 
 == About
 
-I am a Senior Researcher at the [https://www.ed.ac.uk/informatics School of Informatics],
-University of Edinburgh. I obtained my Ph.D. in Computer Science from the
-[https://www.nus.edu.sg/ National University of Singapore] (2020--2024), where I was
-affiliated with the [https://www.quantumlah.org/ Centre for Quantum Technologies (CQT)],
-with a thesis on circuit-based quantum algorithms.
+I am a Senior Researcher at the [https://www.ed.ac.uk/informatics School of Informatics], University of Edinburgh. I obtained my Ph.D. in Computer Science from the
+[https://www.nus.edu.sg/ National University of Singapore] (2020--2024), where I was affiliated with the [https://www.quantumlah.org/ Centre for Quantum Technologies (CQT)]
 
-My research interests span *quantum property testing*, *quantum learning theory*,
-*quantum computational complexity*, *quantum computational cryptography*, and *AI for quantum*.
+== Research Interests
+- *quantum property testing* 
+- *quantum learning theory*
+- *quantum computational complexity*
+- *quantum computational cryptography* 
+- *AI for quantum*.
 
 == News
 
@@ -34,7 +35,7 @@ My research interests span *quantum property testing*, *quantum learning theory*
 
 == Contact
 
-School of Informatics, University of Edinburgh \n
 Room 3.05, Informatics Forum, 10 Crichton Street \n
+School of Informatics, University of Edinburgh \n
 Edinburgh, EH8 9AB, United Kingdom \n
 Email: francisbao1011 (at) gmail.com
