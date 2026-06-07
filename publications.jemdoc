@@ -5,35 +5,42 @@ See also my [https://scholar.google.com/citations?user=U1TGq_gAAAAJ Google Schol
 and [https://arxiv.org/a/bao_j_2 arXiv] pages. Author names are listed alphabetically
 following the theoretical computer science convention.
 
-. *On estimating the quantum Tsallis relative entropy*
-  \[[https://arxiv.org/abs/2510.00752 arXiv]\] \n
-  with Minbo Gao and Qisheng Wang
+. *Forward-Assisted Purification: A Spatiotemporal Framework Beyond Conventional Limits* \n
+  Fei Meng, Jinge Bao, Yunlong Xiao \n
+  \[[https://arxiv.org/abs/2606.02990 arXiv]\]
 
-. *Quantum algorithms and lower bounds for eccentricity, radius, and diameter in undirected graphs*
-  \[[https://arxiv.org/abs/2502.20148 arXiv]\] \n
-  with Adam Wesołowski
+. *On estimating the quantum Tsallis relative entropy* \n
+  Jinge Bao, Minbo Gao, and Qisheng Wang \n
+  \[[https://arxiv.org/abs/2510.00752 arXiv]\]
 
-. *Learning junta distributions, quantum junta states, and $\mathrm{QAC}^0$ circuits*
-  \[[https://arxiv.org/abs/2410.15822 arXiv]\] \[AQIS 2025\] \[ICML 2026\] \n
-  with Francisco Escudero Gutiérrez
+. *Quantum algorithms and lower bounds for eccentricity, radius, and diameter in undirected graphs* \n
+  
+  Adam Wesołowski and Jinge Bao \n
+  \[[https://arxiv.org/abs/2502.20148 arXiv]\]
 
-. *On quantum time complexity of divide and conquer*
+. *Learning junta distributions, quantum junta states, and $\mathrm{QAC}^0$ circuits* \n
+  Jinge Bao and Francisco Escudero Gutiérrez \n
+  \[[https://arxiv.org/abs/2410.15822 arXiv]\]
+  \[AQIS 2025\]
+  \[ICML 2026\]
+
+. *On quantum time complexity of divide and conquer* \n
+  Jonathan Allcock, Aleksandrs Belovs, Jinge Bao, Troy Lee, and Miklos Santha \n
   \[[https://arxiv.org/abs/2311.16401 arXiv]\]
-  \[[https://www.youtube.com/watch?v=2Vc9FzULV_E QIP 2024]\] \[ICALP 2025\] \n
-  with Jonathan Allcock, Aleksandrs Belovs, Troy Lee, and Miklos Santha
+  \[[https://www.youtube.com/watch?v=2Vc9FzULV_E QIP 2024]\] \[ICALP 2025\]
 
-. *Constant-depth circuits for uniformly controlled gates and Boolean functions with application to quantum memory circuits*
+. *Constant-depth circuits for uniformly controlled gates and Boolean functions with application to quantum memory circuits* \n
+  Jonathan Allcock, Jinge Bao, João Doriguello, Alessandro Luongo, and Miklos Santha \n
   \[[https://arxiv.org/abs/2308.08539 arXiv]\]
   \[[https://quantum-journal.org/papers/q-2024-11-20-1530/pdf Quantum]\]
   \[QTML 2023\]
-  \[[https://www.youtube.com/watch?v=66hoGm5TRWc TQC 2024]\] \n
-  with Jonathan Allcock, João Doriguello, Alessandro Luongo, and Miklos Santha
+  \[[https://www.youtube.com/watch?v=66hoGm5TRWc TQC 2024]\]
 
-. *Fundamental theorem for quantum asset pricing*
-  \[[https://arxiv.org/abs/2212.13815 arXiv]\] \n
-  with Patrick Rebentrost
+. *Fundamental theorem for quantum asset pricing* \n
+  Jinge Bao and Patrick Rebentrost \n
+  \[[https://arxiv.org/abs/2212.13815 arXiv]\]
 
-. *Quantum algorithm for stochastic optimal stopping problems with applications in finance*
+. *Quantum algorithm for stochastic optimal stopping problems with applications in finance* \n
+  João Doriguello, Alessandro Luongo, Jinge Bao, Patrick Rebentrost, and Miklos Santha \n
   \[[https://arxiv.org/abs/2111.15332 arXiv]\]
-  \[[https://drops.dagstuhl.de/storage/00lipics/lipics-vol232-tqc2022/LIPIcs.TQC.2022.2/LIPIcs.TQC.2022.2.pdf TQC 2022]\] \n
-  with João Doriguello, Alessandro Luongo, Patrick Rebentrost, and Miklos Santha
+  \[[https://drops.dagstuhl.de/storage/00lipics/lipics-vol232-tqc2022/LIPIcs.TQC.2022.2/LIPIcs.TQC.2022.2.pdf TQC 2022]\]
