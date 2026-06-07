@@ -13,15 +13,15 @@ following the theoretical computer science convention.
   Jinge Bao, Minbo Gao, and Qisheng Wang \n
   \[[https://arxiv.org/abs/2510.00752 arXiv]\]
 
-. *Quantum algorithms and lower bounds for eccentricity, radius, and diameter in undirected graphs* \n
-  Adam Wesołowski and Jinge Bao \n
-  \[[https://arxiv.org/abs/2502.20148 arXiv]\]
-
 . *Learning junta distributions, quantum junta states, and $\mathrm{QAC}^0$ circuits* \n
   Jinge Bao and Francisco Escudero Gutiérrez \n
   \[[https://arxiv.org/abs/2410.15822 arXiv]\]
   \[AQIS 2025\]
   \[ICML 2026\]
+
+. *Quantum algorithms and lower bounds for eccentricity, radius, and diameter in undirected graphs* \n
+  Adam Wesołowski and Jinge Bao \n
+  \[[https://arxiv.org/abs/2502.20148 arXiv]\]
 
 . *On quantum time complexity of divide and conquer* \n
   Jonathan Allcock, Aleksandrs Belovs, Jinge Bao, Troy Lee, and Miklos Santha \n
