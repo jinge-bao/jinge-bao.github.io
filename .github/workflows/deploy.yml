@@ -10,10 +10,12 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment; don't cancel an in-progress run.
+# Only the latest push matters for a static site: cancel any superseded
+# in-progress run so rapid successive edits don't collide (a superseded run
+# shows as "cancelled" rather than a red "failure").
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
