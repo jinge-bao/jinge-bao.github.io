@@ -1,13 +1,17 @@
 # jemdoc: menu{MENU}{publications.html}, nofooter
 = Publications
 
-- *Forward-Assisted Purification: A Spatiotemporal Framework Beyond Conventional Limits* \n
-  Fei Meng, Jinge Bao, Yunlong Xiao \n
+- *Towards optimal quantum estimators for state frame potential* \n
+  Jinge Bao, Wang Fang, Yoshifumi Nakata and Qisheng Wang \n
+  \[https://arxiv.org/abs/2608.24711\]
+
+- *Forward-assisted purification: A spatiotemporal framework beyond conventional limits* \n
+  Fei Meng, Jinge Bao and Yunlong Xiao \n
   \[[https://arxiv.org/abs/2606.02990 arXiv]\]
   \[AQIS 2026\]
 
 - *On estimating the quantum Tsallis relative entropy* \n
-  Jinge Bao, Minbo Gao, and Qisheng Wang \n
+  Jinge Bao, Minbo Gao and Qisheng Wang \n
   \[[https://arxiv.org/abs/2510.00752 arXiv]\]
 
 - *Language Model for Large-Text Transmission in Noisy Quantum Communications* \n
@@ -25,12 +29,12 @@
   \[ICML 2026\]
 
 - *On quantum time complexity of divide and conquer* \n
-  Jonathan Allcock, Aleksandrs Belovs, Jinge Bao, Troy Lee, and Miklos Santha \n
+  Jonathan Allcock, Aleksandrs Belovs, Jinge Bao, Troy Lee and Miklos Santha \n
   \[[https://arxiv.org/abs/2311.16401 arXiv]\]
   \[[https://www.youtube.com/watch?v=2Vc9FzULV_E QIP 2024]\] \[ICALP 2025\]
 
 - *Constant-depth circuits for uniformly controlled gates and Boolean functions with application to quantum memory circuits* \n
-  Jonathan Allcock, Jinge Bao, João Doriguello, Alessandro Luongo, and Miklos Santha \n
+  Jonathan Allcock, Jinge Bao, João Doriguello, Alessandro Luongo and Miklos Santha \n
   \[[https://arxiv.org/abs/2308.08539 arXiv]\]
   \[[https://quantum-journal.org/papers/q-2024-11-20-1530/pdf Quantum]\]
   \[QTML 2023\]
@@ -41,6 +45,6 @@
   \[[https://arxiv.org/abs/2212.13815 arXiv]\]
 
 - *Quantum algorithm for stochastic optimal stopping problems with applications in finance* \n
-  João Doriguello, Alessandro Luongo, Jinge Bao, Patrick Rebentrost, and Miklos Santha \n
+  João Doriguello, Alessandro Luongo, Jinge Bao, Patrick Rebentrost and Miklos Santha \n
   \[[https://arxiv.org/abs/2111.15332 arXiv]\]
   \[[https://drops.dagstuhl.de/storage/00lipics/lipics-vol232-tqc2022/LIPIcs.TQC.2022.2/LIPIcs.TQC.2022.2.pdf TQC 2022]\]
