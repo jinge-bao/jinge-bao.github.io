@@ -22,8 +22,8 @@ directly: the next build replaces it.
 | `service.jemdoc` | Awards and academic service |
 | `cv.jemdoc` and `cv.pdf` | CV page and downloadable CV |
 | `MENU` | Navigation, profile links and contact email |
-| `mysite.conf` | HTML layout, metadata and MathJax configuration |
-| `jemdoc.css` | Desktop, mobile and print styles |
+| `mysite.conf` | MathJax configuration |
+| `jemdoc.css` | Default jemdoc layout and print styles |
 | `photos/profile.jpg` | Profile photograph |
 | `slides/` | Downloadable teaching materials |
 

@@ -15,7 +15,6 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.ids = set()
         self.links = []
-        self.viewports = []
         self.title = []
         self.in_title = False
         self.errors = []
@@ -27,8 +26,6 @@ class Page(HTMLParser):
             if attrs["id"] in self.ids:
                 self.errors.append("duplicate id: " + attrs["id"])
             self.ids.add(attrs["id"])
-        if tag == "meta" and attrs.get("name") == "viewport":
-            self.viewports.append(attrs.get("content", ""))
         if tag == "title":
             self.in_title = True
         if tag in {"a", "link", "img", "script"}:
@@ -65,8 +62,6 @@ def main():
         errors.extend(f"{path.name}: {error}" for error in page.errors)
         if not "".join(page.title).strip():
             errors.append(f"{path.name}: missing page title")
-        if len(page.viewports) != 1 or "width=device-width" not in page.viewports[0]:
-            errors.append(f"{path.name}: missing or invalid mobile viewport")
 
         for reference in page.links:
             url = urlsplit(reference)
