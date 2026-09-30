@@ -1,19 +1,25 @@
 /* Default css file for jemdoc. */
 
-table#tlayout {
+#tlayout {
+	display: flex;
+	max-width: 76rem;
+	min-height: 100vh;
+	margin: 0 auto;
 	border: none;
-	border-collapse: separate;
 	background: white;
 }
 
 body {
 	background: white;
+	color: #222222;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
 }
 
 #layout-menu {
+	box-sizing: border-box;
+	flex: 0 0 11.5rem;
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
@@ -32,6 +38,10 @@ body {
 }
 
 #layout-content {
+	box-sizing: border-box;
+	flex: 1;
+	min-width: 0;
+	overflow-wrap: anywhere;
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
@@ -62,6 +72,25 @@ a, a > tt {
 
 a:hover {
 	border-bottom: 1px gray dotted;
+}
+
+a:focus-visible {
+	outline: 2px solid #224b8d;
+	outline-offset: 3px;
+}
+
+.skip-link {
+	position: absolute;
+	top: 0;
+	left: 1rem;
+	transform: translateY(-150%);
+	padding: 0.75rem 1rem;
+	background: white;
+	z-index: 1;
+}
+
+.skip-link:focus {
+	transform: translateY(0);
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
@@ -362,9 +391,85 @@ tr.heading {
 
 img {
 	border: none;
+	max-width: 100%;
+	height: auto;
 }
 
 table.imgtable, table.imgtable td {
 	border: none;
 	text-align: left;
+}
+
+/* Keep the existing sidebar on desktop; let navigation wrap on phones. */
+@media screen and (max-width: 42rem) {
+	#tlayout {
+		display: block;
+	}
+
+	#layout-menu {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0 0.25rem;
+		padding: 0.75rem 1rem;
+		border-width: 0 0 1px;
+		white-space: normal;
+	}
+
+	#layout-menu .menu-category {
+		flex-basis: 100%;
+		margin-top: 0.5rem;
+	}
+
+	#layout-menu .menu-category:first-child {
+		margin-top: 0;
+	}
+
+	#layout-menu .menu-item {
+		padding-left: 0;
+		text-indent: 0;
+	}
+
+	#layout-menu a {
+		display: inline-flex;
+		align-items: center;
+		box-sizing: border-box;
+		min-height: 44px;
+		margin-left: 0;
+		padding: 0.5rem 0.4rem;
+	}
+
+	#layout-content {
+		padding: 0.5rem 1rem 1.5rem;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	ul, ol {
+		padding-left: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 26rem) {
+	table.imgtable, table.imgtable tbody,
+	table.imgtable tr, table.imgtable td {
+		display: block;
+	}
+
+	table.imgtable td {
+		padding: 0 0 0.5rem;
+	}
+}
+
+@media print {
+	#tlayout {
+		display: block;
+		min-height: auto;
+	}
+
+	.skip-link {
+		display: none;
+	}
 }

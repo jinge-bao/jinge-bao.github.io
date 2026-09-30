@@ -3,23 +3,26 @@ name: Build and deploy jemdoc site
 on:
   push:
     branches: [main]
-  workflow_dispatch:          # lets you trigger a build manually from the Actions tab
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# Only the latest push matters for a static site: cancel any superseded
-# in-progress run so rapid successive edits don't collide (a superseded run
-# shows as "cancelled" rather than a red "failure").
+# Let an active deployment finish before starting the next one.
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: jemdoc-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      deploy: ${{ steps.pages.outputs.deploy }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,27 +30,71 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
       - name: Build jemdoc pages
         run: bash build.sh
 
+      - name: Validate pages and local links
+        run: python3 scripts/check_site.py
+
+      # Branch publishing already deploys the committed HTML. Never race it
+      # with a second publisher. Switching Pages Source to GitHub Actions
+      # enables this workflow's deployment on the next run.
+      - name: Check Pages publishing source
+        id: pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from urllib.request import Request, urlopen
+
+          url = f"{os.environ['GITHUB_API_URL']}/repos/{os.environ['GITHUB_REPOSITORY']}/pages"
+          request = Request(url, headers={
+              "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          })
+          with urlopen(request, timeout=30) as response:
+              mode = json.load(response).get("build_type")
+          if mode not in {"legacy", "workflow"}:
+              raise SystemExit(f"Unrecognized Pages build_type: {mode!r}; deployment stopped.")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"deploy={'true' if mode == 'workflow' else 'false'}\n")
+          if mode == "legacy":
+              print("::warning::Pages is publishing from a branch. Custom deployment was skipped to avoid overwriting it. Set Settings > Pages > Source to GitHub Actions, then rerun this workflow.")
+          PY
+
+      - name: Check committed HTML for branch publishing
+        if: steps.pages.outputs.deploy == 'false'
+        run: |
+          if ! git diff --quiet -- '*.html'; then
+            echo "::error::Committed HTML is out of date. Run ./build.sh and commit the generated HTML, or switch Pages Source to GitHub Actions."
+            git diff --stat -- '*.html'
+            exit 1
+          fi
+
       - name: Stage site files
+        if: steps.pages.outputs.deploy == 'true'
         run: |
           mkdir -p _site
-          rsync -a \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='.claude' \
-            --exclude='_site' \
-            ./ _site/
+          cp ./*.html jemdoc.css cv.pdf .nojekyll _site/
+          cp -R photos slides _site/
 
       - name: Upload Pages artifact
+        if: steps.pages.outputs.deploy == 'true'
         uses: actions/upload-pages-artifact@v3   # defaults to ./_site
 
   deploy:
     needs: build
+    if: needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
