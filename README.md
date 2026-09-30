@@ -23,7 +23,7 @@ directly: the next build replaces it.
 | `cv.jemdoc` and `cv.pdf` | CV page and downloadable CV |
 | `MENU` | Navigation, profile links and contact email |
 | `mysite.conf` | MathJax configuration |
-| `jemdoc.css` | Default jemdoc layout and print styles |
+| `jemdoc.css` | Default jemdoc appearance, fluid page width and print styles |
 | `photos/profile.jpg` | Profile photograph |
 | `slides/` | Downloadable teaching materials |
 

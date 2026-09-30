@@ -1,6 +1,7 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
+	width: 100%;
 	border: none;
 	border-collapse: separate;
 	background: white;
@@ -20,7 +21,7 @@ body {
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
-	width: auto;
+	width: 1%;
 	white-space: nowrap;
 	text-align: left;
 	vertical-align: top;
@@ -32,6 +33,7 @@ body {
 }
 
 #layout-content {
+	overflow-wrap: anywhere;
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
@@ -367,4 +369,18 @@ img {
 table.imgtable, table.imgtable td {
 	border: none;
 	text-align: left;
+}
+
+/* Let the profile fit narrow windows without changing the sidebar. */
+@media screen and (max-width: 30rem) {
+	table.imgtable, table.imgtable tbody,
+	table.imgtable tr, table.imgtable td {
+		display: block;
+	}
+
+	table.imgtable img {
+		width: 100%;
+		max-width: 160px;
+		height: auto;
+	}
 }
